@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0 auto;
+}
+.main-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.left-container {
+    margin-top: 50px;
+    position: relative;
+    width: 50%;
+}
+.left-container > h1 {
+    padding: 50px 0 0 135px;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 64px;
+    color: #000000;
+}
+.left-container > h1::before {
+    top: 60px;
+    left: 50px;
+    position: absolute;
+    content: '(Philosophy)';
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: #000000;
+    opacity: 0.55;
+}
+.left-container span {
+    color: #71870E;
+}
+.left-container > p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: #000000;
+    opacity: 0.85;
+}
+.frst-text {
+    padding: 100px 90px 10px 285px;
+}
+.scnd-text {
+    padding: 0 90px 60px 285px;
+}
+.read-more {
+    padding: 0 0 30px 170px;
+}
+.read-more > a {
+    padding-left: 27px;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #CD9A3D;
+}
+
+.right-container {
+    position: relative;
+    margin-top: 50px;
+    max-width: 50%;
+}
+.right-container > p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #71870E;
+    opacity: 0.8;
+    padding: 75px 0 30px 105px;
+}
+.img2 {
+    position: absolute;
+    z-index: 9;
+    right: -130px;
+    bottom: 250px;
+}
+@media (min-width: 1200px) {
+    body {
+        max-width: 1440px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .frst-text {
+        padding: 70px 45px 10px 185px;
+    }
+    .scnd-text {
+        padding: 0 45px 60px 185px;
+    }
+    .img2 {
+        right: -26px;
+        bottom: 94px;
+    }
+}
+@media (min-width: 721px) and (max-width: 991px) {
+    .left-container > h1 {
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .frst-text {
+        padding: 30px 20px 5px 80px;
+    }
+    .scnd-text {
+        padding: 0 20px 30px 80px;
+    }
+    .read-more {
+        padding: 0 0 30px 70px;
+    }
+    .img1 {
+        max-width: 100%;
+    }
+    .img2 {
+        position: absolute;
+        max-width: 100%;
+        right: -12px;
+        bottom: 69px;
+    }
+ 
+    .right-container > p {
+        padding: 30px 0 20px 50px;
+    }
+}
+@media (max-width: 720px) {
+    .main-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .left-container {
+        width: 100%;
+    }
+    .left-container > h1 {
+        font-size: 40px;
+        line-height: 35px;
+    }
+    .frst-text {
+        padding: 30px 20px 5px 80px;
+    }
+    .scnd-text {
+        padding: 0 20px 30px 80px;
+    }
+    .read-more {
+        padding: 0 0 30px 70px;
+    }
+    .right-container {
+        width: 461px;
+        max-width: 100%;
+    }
+    .img1 {
+        display: block;
+        margin: 0 auto;
+    }
+    .img2 {
+
+        right: 70px;
+        bottom: 85px;
+    }
+}
+@media (max-width: 460px) {
+    .right-container > p, .left-container > h1::before {
+        display: none;
+    }
+    .left-container {
+        margin: 0;
+    }
+    .right-container {
+        margin-top: 20px;
+        width: 274px;
+        max-width: 100%;
+    }
+    .img2 {
+        right: -46px;
+        bottom: -68px;
+    }
+    .left-container > h1 {
+        padding: 25px 8px;
+        text-align: center;
+        font-size: 40px;
+        line-height: 44px;
+    }
+    .frst-text {
+        padding: 10px 10px 5px 10px;
+    }
+    .scnd-text {
+        padding: 0 10px 30px 10px;
+    }
+}
