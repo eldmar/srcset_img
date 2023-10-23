@@ -164,7 +164,7 @@ body {
         bottom: 85px;
     }
 }
-@media (max-width: 460px) {
+@media (max-width: 466px) {
     body {
         min-width: 465px;
     }
