@@ -166,7 +166,7 @@ body {
 }
 @media (max-width: 466px) {
     body {
-        min-width: 465px;
+        min-width: 460px;
     }
     .right-container > p, .left-container > h1::before {
         display: none;
