@@ -5,6 +5,7 @@
 }
 body {
     margin: 0 auto;
+    min-width: 465px;
 }
 .main-container {
     display: flex;
